@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>BOOTStrep Homepage</title>
+<link rel="icon" href="files/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css" >
+
+
+</head>
+
+<body id="index" class="home">
+
+<header id="banner" class="body">
+<h1><a href="http://www.bootstrep.eu"><img alt="BOOTSTrep" src="files/bootstrep.gif" /></a></h1>
+<nav><ul>
+<li class="active"><a href="index.html" >Home</a> </li>
+<li> <a href="news.html">News</a> </li>
+<li> <a href="participants.html">Participants</a> </li>
+<li> <a href="press.html">Press</a> </li>
+<li> <a href="publications.html">Publications</a> </li>
+<li> <a href="resources.html">Resources & Tools</a> </li>
+<li> <a href="downloads.html">Downloads</a> </li>
+<li> <a href="contact.html">Contact</a> </li>
+</ul></nav>
+</header>
+<h2>Resources, Tools, Repositories</h2>
+<p>
+
+<h3><a id="Free_NLP_components"></a> Free NLP components </h3>
+<p> 
+FSU Jena has started putting their NLP components for UIMA for free <a href="http://www.julielab.de/Resources/JCoRe+NLP+Tools.html">download on their website</a>.
+</p>
+
+<h3><a id="BioLexicon"></a><a id="_BioLexicon"></a> BioLexicon </h3>
+<p>
+The <a href="BioLexicon/index.html" >BioLexicon</a> is a large-scale lexical resource, especially designed to contain and manage data from bio-databases. The lexicon data model has been conceived to be compliant to the ISO-ratified international standards for lexicons; its associated data categories, also reflects the ISO Data Category conceptual model available in the ISO Registry. 
+</p>
+
+<h3><a id="BioOntology"></a><a id="_BioOntology"></a> BioOntology </h3>
+<p>
+The <a href="http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html" >Gene Regulation Ontology (GRO)</a> is a methodologically rigorously crafted formal ontology which covers the domain of gene regulation. It integrates knowledge that is partially assembled in alternative ontological resources we relied upon, viz. the Gene Ontology (GO), the Sequence Ontology (SO), Chemical Entities of Biological Interest (ChEBI), INOH Molecule Role (IMR), INOH Event Ontology (IEV), the NCBI Taxonomy and TransFac.
+</p>
+
+<h3><a id="E.coli_Corpora"></a> E.coli Corpora </h3>
+<p>
+Four E. coli relevant corpora are available:
+</p>
+<ul>
+	<li> <a href="TODO" >Bio-Event Linguistically Annotated Corpus (BELA)</a>: a corpus of MEDLINE abstracts on the subject of E.Coli.
+	</li> <li> <a href="http://www.nactem.ac.uk/GREC/" >GREC Corpus</a>: a semantically annotated corpus of MEDLINE abstracts for training IE systems and biomedical event extraction.
+	</li> <li> <a href="TODO" >Gene Regulation Modality Corpus</a>: 202 MEDLINE abstracts annotated with modal information that contain a total of 1469 gene regulation events and 249 of these events were annotated with modality information.
+	</li> <li> <a href="https://www.julielab.de/Resources/Corpora/GeneReg.html" >GeneReg Corpus</a>: 314 MEDLINE abstracts dealing with gene regulation in E. Coli.
+	</li>
+</ul> 
+
+<h3><a id="Text_Analytics_Toolkit"></a>Text Analytics Toolkit</h3>
+<p>
+The <a href="TextToolkits/index.html" >BOOTStrep Text Analytics Toolkit</a> is a collection of almost forty human language technology modules which cover virtually all phases of text analytics such as text segmentation (sentence splitting, tokenisation), morpho-lexical analysis (stemming, lemmatisation, acronym and abbreviation resolution, term recognition), syntactic analysis (part-of-speech tagging, coordination resolution, chunking, parsing), semantic analysis (named entity recognition and interpretation, relation and event extraction) and discourse-level analysis (co-reference resolution). While some modules could be employed on an as-is basis (e.g., statistical term recognition systems such as TerMine, or rule-based parsers such as Enju), in particular machine learning-based systems had to be re-trained. As a consequence, this required the creation of training material and, therefore, BOOTStrep partners had to develop several text corpora annotated with formal text structure, syntactic, semantic and discourse information.
+</p>
+
+<h3><a id="BioFactStore"></a><a id="_BioFactStore"></a> BioFactStore </h3>
+<p>
+The <a href="BioFactStore/index.html">BOOTStrep BioFactStore</a> is a database for biological researchers and developers, which contains factual information (empirical assertions, statements) about gene regulation in E. coli. The BioFactStore is a merger of RegulonDB (<a href="http://regulondb.ccg.unam.mx/" target="_top">http://regulondb.ccg.unam.mx/</a>), the most authoritative manually curated database of regulatory networks in many species, and the automatically harvested factoids relating to gene regulation in E. coli from the Knowledge Reaper (see (5)). It not only reports on selected types of events and the involved agents and patients but also on the polarity of the relation and the physical contact data. Modality (certainty of the information) is covered as well as additional parameters such as environment parameters: <ul>
+<li> Event type: currently Regulation of Transcription (ROT), Regulation of Gene Expression (ROGE), and Transcription Factor Binding to Regulatory Region (TFBRR).  All events are represented in the BioOntology (GRO).
+</li> <li> Involved Agent and Patient:  The involved biological entities are genes, proteins and transcription factors.  They can be distinguished according to their role definition.  Entities are linked to the BioLexicon and from there to other external data resources (via the BioLexicon)
+</li> <li> The Polarity represents the direction of the interaction of the event, i.e. which part is acting on its partners.  
+</li> <li> Physical contact denotes whether or not the involved entities have a direct interaction, i.e. whether the entities interact through a physical connection.  
+</li> <li> Additional constraints have to be considered eventually, for example the sigma factor, temperature, experimental settings and other parameters that could influence the event.
+</li>
+</ul>
+
+<footer id="contentinfo" class="body">
+<span class="sponsors">BOOTStrep was sponsored by the following entities:</span>
+<table>
+<tbody>
+<tr> 
+	<td><a href="http://fp6.cordis.lu/index.cfm?fuseaction=UserSite.FP6HomePage"><img src="files/fp6_logo_100px_transp.gif" alt="EU Sixth Framework Programme Logo" /></a></td>
+	<td><a href="http://europa.eu.int/"><img src="files/eu_logo_100px.gif" alt="EU Logo"  /></a></td>
+	<td><a href="http://www.cordis.lu/ist/"><img src="files//ist_logo_100px_transp.gif" alt="Information Society Technologies Logo" /></a></td>
+</tr>
+</tbody>
+</table>
+</footer>
+
+</body>
+</html>

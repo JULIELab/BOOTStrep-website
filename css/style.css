@@ -1,0 +1,120 @@
+/* Imports */
+@import url("reset.css");
+
+html body { 
+ font-size: 12px; 
+ font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ line-height: 1.4;
+}
+
+p {
+ margin:1em;
+ * p:last-child margin-bottom: 0;
+}
+nav {
+        width:80em;
+        height:2em;
+        line-height:2em;
+}
+nav ul {
+        list-style-image:none;
+        list-style-position:outside;
+        list-style-type:none;
+}
+nav ul li {
+        float:left;
+        list-style-type:none;
+}
+
+nav ul li a{
+        margin-right:0;
+        display:block;
+        line-height:2em;
+}
+
+table {
+ vertical-align:middle;
+ text-align:left;
+ margin-left: 1em;
+ margin-right:auto;
+ padding:0.5em;
+}
+th{
+ color:#fff;
+ padding-left:0.25em;
+ background:#444;
+}
+td{
+ padding:0.1em 1em 0.1em 0.5em;
+}
+td.odd{
+ background:#fff;
+}
+td.even{
+ background:#eee;
+}
+
+ol, ul {
+ margin:0.75em;
+}
+ol li, ul li {
+ line-height:1.4em;
+ margin-left:1.4em;
+ }
+ol { list-style-type: lower-alpha; }
+li { list-style-type: circle; }
+li.header { list-style-type: none; }
+
+h1 {
+        font-size: 1.4em;
+        padding:0.5em;
+        background: #8ea;
+}
+h2 {font-size: 1.3em; font-weight: bolder;}
+h3 {font-size: 1em}
+h4 {font-size: 0.7em}
+h5 {font-size: 0.4em}
+h2, h3, h4, h5 {
+ font-weight: 400;
+ line-height: 1.1;
+ margin:1.7em 0 0.5em 0.5em;
+}
+
+footer {
+ background:#8ea;
+ padding:0.5em;
+ margin-top:2em;
+}
+
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+ color: #C74350;
+ text-decoration: underline;
+ padding: 0.25em;
+}
+a:hover, a:active {
+ background-color: #C74350;
+ border-radius: 10px;
+ color: #fff;
+ text-decoration: none;
+ padding: 0.25em;
+ opacity: 1;
+}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+::-moz-selection {background: #F6CF74; color: #fff;}
+::selection {background: #F6CF74; color: #fff;}
+
+blockquote {font-style: italic;}
+
+dl {
+ margin:1em;
+}
+dt { font-weight: bold;}
+dd {
+ margin-left:2em;
+ margin-bottom:1em;
+}

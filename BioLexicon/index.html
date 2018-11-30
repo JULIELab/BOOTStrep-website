@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>BOOTStrep Homepage</title>
+<link rel="icon" href="../files/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../files/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/style.css" >
+
+</head>
+
+<body id="index" class="home">
+
+<header id="banner" class="body">
+<h1><a href="http://www.bootstrep.eu"><img alt="BOOTSTrep" src="../files/bootstrep.gif" /></a></h1>
+<nav><ul>
+<li class="active"><a href="../index.html" >Home</a> </li>
+<li> <a href="../news.html">News</a> </li>
+<li> <a href="../participants.html">Participants</a> </li>
+<li> <a href="../press.html">Press</a> </li>
+<li> <a href="../publications.html">Publications</a> </li>
+<li> <a href="../resources.html">Resources & Tools</a> </li>
+<li> <a href="../downloads.html">Downloads</a> </li>
+<li> <a href="../contact.html">Contact</a> </li>
+</ul></nav>
+</header>
+<h2>BioLexicon</h2>
+<p>
+The <a href="BioLexiconDB.html" class="twikiLink">BioLexiconDB</a> is an integrated resource in that, initially populated with data collected from available biomedical sources (e.g. UniProtKb/ Swiss-Prot, ChEBI, BioThesaurus, NCBI taxonomy and other biomedical resources), it has been incremented with entries and lexical properties for terms and events automatically extracted from texts in biomedical literature. Since the BioLexicon is especially designed for information extraction, the integration of lexical information typically contained in a computational lexicon becomes crucial and constitutes one of the innovations with respect to related works. The BioLexicon, by its very nature, is a resource that integrates features of both terminologies and lexicons. Part of BioLexiconterms and their related syntactic and semantic information are aligned with concepts of the BioOntology, the ontological resource of the project.
+</p>
+
+<h3><a id="Term_Repository"></a> Term Repository </h3>
+<p>
+The BOOTStrep consortium is developing a lexical resource, called the Bio Lexicon. In the current state, the core content called the Term Repository has generated and exchanged with the partners to augment the content with terms from the literature (NACTEM/UOM) and to feed the results into a database schema that fulfils standard requirements of a lexical resource (CNR, Pisa). The content of the Term Repository has been assessed against the corpus of the BIOCREATIVE II / Task 1b challenge (gene name normalisation). 
+<a href="http://www.ebi.ac.uk/Rebholz-srv/BioLexicon/biolexicon.html" >http://www.ebi.ac.uk/Rebholz-srv/BioLexicon/biolexicon.html</a>
+</p>
+<p>
+Pezik, P. Jimeno, A. Lee, V., Rebholz-Schuhmann, D. (2008) Static Dictionary Features for Term Polysemy Identification. Proceedings of the Language Resources and Evaluation Conference (LREC-2008), workshop on "Building and evaluating resources for biomedical text mining", Marrakech (Morocco), 28-30 May 2008
+</p>
+
+<h3><a id="Subcategorization_Extractor"></a> Subcategorization Extractor </h3>
+<p>
+This web service automatically extracts subcategorization frames for verbs from texts linguistically pre-processed with the Enju syntactic parser for English (version 2.2, <a href="http://www-tsujii.is.s.u-tokyo.ac.jp/enju/" >http://www-tsujii.is.s.u-tokyo.ac.jp/enju/</a>). Differently from many approaches to subcategorisation acquisition, the extraction tool does not presuppose a battery of predefined subcategorization frames (SCF). In spite of the fact that SCF repertoires exist for the English language, it was preferred to adopt a “SCF discovery” approach in order to be able to acquire, besides subcategorised arguments, also strongly selected modifiers such as e.g. location, manner and timing which play a crucial role in the interpretation of biomedical texts.
+</p>
+<p>
+Subcategorization extraction can be carried out with respect either to a list of verbs, e.g. verbs which are considered as biologically relevant, or to the whole set of verbs attested in the acquisition corpus. The output is a XIF-compliant XML file containing the list of acquired subcategorization frames and the verb-SCF/SLOT associations, which is ready for uploading in the BioLexicon. The service has been developed by CNR-ILC within the BOOTStrep project (WP03: Population of the Bio-Lexicon). A complete description of the SCF extraction tool and of acquired results is provided in Deliverable 3.3 “Augmented version (2) of the Bio-Lexicon including linguistic information”.
+</p>
+<p>
+The service address is <a href="http://poesix1.ilc.cnr.it/bootstrep/subcatextractor.cgi" >http://poesix1.ilc.cnr.it/bootstrep/subcatextractor.cgi</a>. Note that the web service can be accessed with a client (<a href="http://www.bootstrep.eu/pub/Extern/ToolsResourcesRepositories/BioLexicon/SCF_Extractor_client.pl.txt" target="_top">SCF_Extractor_client.pl</a>). A Perl interpreter is required on the client machine<a id="TopicEnd"></a>
+</p>
+
+
+<footer id="contentinfo" class="body">
+<span class="sponsors">BOOTStrep was sponsored by the following entities:</span>
+<table>
+<tbody>
+<tr> 
+	<td><a href="http://fp6.cordis.lu/index.cfm?fuseaction=UserSite.FP6HomePage"><img src="files/fp6_logo_100px_transp.gif" alt="EU Sixth Framework Programme Logo" /></a></td>
+	<td><a href="http://europa.eu.int/"><img src="files/eu_logo_100px.gif" alt="EU Logo"  /></a></td>
+	<td><a href="http://www.cordis.lu/ist/"><img src="files//ist_logo_100px_transp.gif" alt="Information Society Technologies Logo" /></a></td>
+</tr>
+</tbody>
+</table>
+</footer>
+
+</body>
+</html>

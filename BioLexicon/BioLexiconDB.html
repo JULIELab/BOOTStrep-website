@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>BOOTStrep Homepage</title>
+<link rel="icon" href="../files/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../files/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/style.css" >
+
+</head>
+
+<body id="index" class="home">
+
+<header id="banner" class="body">
+<h1><a href="http://www.bootstrep.eu"><img alt="BOOTSTrep" src="../files/bootstrep.gif" /></a></h1>
+<nav><ul>
+<li class="active"><a href="../index.html" >Home</a> </li>
+<li> <a href="../news.html">News</a> </li>
+<li> <a href="../participants.html">Participants</a> </li>
+<li> <a href="../press.html">Press</a> </li>
+<li> <a href="../publications.html">Publications</a> </li>
+<li> <a href="../resources.html">Resources & Tools</a> </li>
+<li> <a href="../downloads.html">Downloads</a> </li>
+<li> <a href="../contact.html">Contact</a> </li>
+</ul></nav>
+</header>
+<h2>BioLexicon</h2>
+<p>
+
+<h3><a id="BioLexicon_DB"></a>BioLexicon DB </h3>
+<p>
+The BioLexicon has been implemented in a MySQL DB consisting of two modules: the actual MySQL database, i.e. the container of terms and term related information, and a java software component for the automatic population of the database. The database is structured into three logically distinct but strongly interconnected layers. The neat separation between the tables containing the data (the BioLexicon proper) and “operational” tables allows for the optimization of the uploading of data into the BioLexicon DB, and ensures an easy extendibility both of the database and of the uploading procedures. Face to the need to add a new table (i.e. a new lexical object), or a new attribute to an existing table, it is sufficient to add only the properties of the new tables or attributes and to modify accordingly only the relevant portion of the DB layer to handle the novelties.
+</p>
+<p>
+BioLexicon distribution for research use by academia, for research use by commercial organisations and for commercial use, is undertaken on behalf of the developers by the European Language Resources Association Distribution Agency (ELDA)
+</p>
+<p>
+<a href="http://www.elda.org/" >http://www.elda.org/</a>
+</p>
+
+<h3><a id="The_BioLexicon_Web_Interface"></a> The BioLexicon Web Interface </h3>
+<p>
+The BioLexicon DB comes equipped together with a dedicated user-friendly web interface which presents the user a set of possible typical queries. The interface allows visualization of both biological and linguistic information of terms encoded in the lexical resource. It also allows the user to simply navigate through terms, their relations and their lexical forms, using a hyperlink-based structure. Different search criteria let the user browse terms using a word matching search engine, with the possibility to choose different data sources and/or semantic/lexical types. A search by identifier is also available. A help menu displays documentation or any other information available about the properties involved in the description of a term. Two different levels of description are proposed for each term and property: a biological description and a lexical one. A JavaDoc is available for developers interested in querying directly the database with the Java APIs. Moreover, a FAQ section describes all the common troubleshooting that may arise and their solutions. 
+</p>
+<p>
+<a href="http://wiki.ilc.cnr.it/BootStrep/searchPanel.action" >http://wiki.ilc.cnr.it/BootStrep/searchPanel.action</a>
+</p>
+
+<h3><a id="XIF_and_Automatic_Up-loading_pro"></a> XIF and Automatic Up-loading procedures </h3>
+<p>
+External to the DB but fundamental for its automatic population is an XML Interchange Format (XIF) specifically tailored on the BioLexicon structure. This interchange format has been designed in the Bootstrep project with the main purpose of automatically populating the BioLexicon with data provided by domain experts. The XML Interchange Format DTD is to be considered a simplified version of the BioLexicon DTD, which on the one hand accommodates the needs of data providers and, on the other, facilitate the automatic uploading of the DB. By means of the XIF, standardization of the data extracted from the different terminological resources and from texts (by automatic NLP applications) is allowed. This way, any system/group wishing to feed new data into the BioLexicon would only need to encode this in an XML file according to the XIF DTD. 
+</p>
+<p>
+<a href="http://www.ilc.cnr.it/viewpage.php/sez=ricerca/id=860/vers=ing" >http://www.ilc.cnr.it/viewpage.php/sez=ricerca/id=860/vers=ing</a>
+</p>
+<p>
+The loading software interprets the XIF and applies the new instructions automatically inserting the new table or attribute. This property of the XIF together with the neat separation of the three layers of the DB mentioned above allows any agent (human or machine) to easily populate, update and create new objects and attributes.
+</p>
+<p>
+<a href="http://www.ilc.cnr.it/viewpage.php/sez=ricerca/id=860/vers=ita" target="_top">http://www.ilc.cnr.it/viewpage.php/sez=ricerca/id=860/vers=ita</a>
+</p>
+
+<h3><a id="BioLexicon_WebServices"></a>BioLexicon WebServices </h3>
+<p>
+This web service extracts the linguistic layers information from the BioLexicon database: it is based on SOAP protocol.
+The web service extracts a LemId for a given entry: the user can query for a LemId using two different APIs: getLemmaFromSourceVal and getLemmaFromWord. The first one extracts all lemma information (LemdId included,) that matches the source value, whereas the latter allows filtering all lemma information by different criteria: POS, Semantic Type, Sources, word (exact match or substring, case sensitive/insensitive). Once a LemId is retrieved, the user is able to obtain different linguistic information (variants, inflected forms, data categories, syntax, semantics and syntax-semantic mapping) simply invoking the service API with a LemID as a parameter. 
+The results of each operation consist of an operation status structure and a list of the results. 
+</p>
+<p>
+<a href="http://wiki.ilc.cnr.it/BootStrep/webservices.html" >http://wiki.ilc.cnr.it/BootStrep/webservices.html</a> <a id="TopicEnd"></a>
+</p>
+
+
+
+<footer id="contentinfo" class="body">
+<span class="sponsors">BOOTStrep was sponsored by the following entities:</span>
+<table>
+<tbody>
+<tr> 
+	<td><a href="http://fp6.cordis.lu/index.cfm?fuseaction=UserSite.FP6HomePage"><img src="files/fp6_logo_100px_transp.gif" alt="EU Sixth Framework Programme Logo" /></a></td>
+	<td><a href="http://europa.eu.int/"><img src="files/eu_logo_100px.gif" alt="EU Logo"  /></a></td>
+	<td><a href="http://www.cordis.lu/ist/"><img src="files//ist_logo_100px_transp.gif" alt="Information Society Technologies Logo" /></a></td>
+</tr>
+</tbody>
+</table>
+</footer>
+
+</body>
+</html>
