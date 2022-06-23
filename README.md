@@ -1,4 +1,4 @@
-The orginal BOOTStrep website was a TWiki that was compromised multiple times.
+The orginal BOOTStrep website (formerly availabe at http://bootstrep.eu) was a TWiki that was compromised multiple times.
 As maintaining a Wiki for a former project is a unecessary burden,
 the important pages were all manually transformed to static pages a few years back.
 
